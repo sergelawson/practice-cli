@@ -3,13 +3,18 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "practice": "./dist/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -w",
+    "link-cli": "pnpm unlink --global pratice-cli && pnpm link --global"
   },
   "keywords": [],
   "author": "Serge Lawson",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.5.0",
     "typescript": "^5.1.6"
   }
 }
